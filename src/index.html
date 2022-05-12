@@ -23,12 +23,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-links">
                   <ul class="navbar-nav ms-auto text-center fs-5">
-                    <li class="nav-item"><a href="./src/index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="/src/index.html" class="nav-link text-white fw-bolder">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
-                    <li class="nav-item"><a href="/" class="nav-link text-white">Tools</a></li>
+                    <li class="nav-item"><a href="#tools" class="nav-link text-white">Tools</a></li>
                     <li class="nav-item"><a href="/" class="nav-link text-white">Services</a></li>
-                    <li class="nav-item"><a href="/" class="nav-link text-white">Portofolio</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link text-white">Portfolio</a></li>
                     <li class="nav-item"><a href="/" class="nav-link text-white">Contact</a></li>
                   </ul>
                 </div>
@@ -44,8 +44,8 @@
             <div class="row">
               <div class="col-sm col-md-6 col-lg-6">
                 <div class="header-info">
-                  <h4 class="btn btn-warning text-white align-items-center fs-5 px-4 py-2 mt-5">Hi There!</h4>
-                  <h1 class="fs-1 py-2 text-white">I'M Jacob Kyalo</h1>                
+                  <h1 class="text-warning fs-1 py-2 mt-5">Hi There!</h1>
+                  <h2 class="fs-2 py-2 text-white">I'M Jacob Kyalo</h2>                
                   <h3 class="fs-4 py-2 text-white">A FrontEnd <span class="text-warning"> Developer</span></h3>                
                   <p class="lead text-white">I love to satisfy users by designing the best user interfaces and experience. My goal is to present ideas to useful mark ups by creating appealing UIs.</p>
                   <div class="social-links mt-4">
@@ -70,30 +70,80 @@
         </div>
      </header>
 
-    <section id="about" class="me-5 py-5">
+    <section id="about" class="me-5 py-4">
        <div class="container">
         <h1 class="fs-1 text-warning text-center mb-5">About</h1>
           <div class="row">
             <div class="col-sm col-md-6 col-lg-6">
-              <img src="../assets/header2-svg.png" alt="about-image" class="img-fluid w-100">
+              <img src="../assets/header2-svg.png" alt="about-image" class="img-fluid w-100 mb-4">
             </div>
            <div class="col-sm col-md-6 col-lg-6">
               <h1 class="fs-1 text-white">About Me</h1>
               <p class="mt-3 lead text-light lh-base">I am Jacob from Nairobi, Kenya. I am an undergraduate student pursuing Bachelor of Science
                 in Computer Science. Am interested in Web Development and especially FrontEnd Development.
               </p>
-              <p class="mt-2 lead text-light">Looking forward for more project collaboration <br> and contribution</p>
+              <p class="mt-2 lead text-light">Looking forward for more project collaborations <br> and contributions</p>
               <div class="cv-dowload mt-5">
                   <a href="../assets/resume.pdf" target="_blank" class="btn btn-warning py-2 text-white rounded-pill">Download CV <i class="bi bi-box-arrow-in-down"></i></a>
               </div>
             </div>
-           
-         </div>
+          </div>
        </div>
     </section>
-    <section id="skills" class="me-5 py-5">
-      <div class="container">
-        <h1 class="fs-1 text-warning text-center mb-5">Skills</h1>
+    <section id="skills" class="mb-2 py-4">
+      <div class="container text-center">
+        <h1 class="fs-1 text-warning text-center">Skills</h1>
+        <p class="lead pt-3 text-white text-center mb-5 fs-3">My Skill Set.</p>
+        <div class="row g-3">
+          <div class="col-6 col-md-4 col-lg-2">
+            <img src="../assets/html-svg.png" alt="html-logo" class="img-fluid w-50 text-dark">
+            <p class="pt-2 ms-1 text-white lead fw-bold">HTML</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+              <img src="../assets/css-svg.png" alt="css-logo" class="img-fluid w-50 bg-dark">
+              <p class="pt-2 ms-1 text-white lead fw-bold">CSS</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <img src="../assets/js-svg.png" alt="js-logo" class="img-fluid w-50 bg-dark">
+            <p class="pt-2 ms-1 text-white lead fw-bold">JS</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <img src="../assets/bootstrap5.png" alt="bootstrap-logo" class="img-fluid w-50 bg-dark">
+            <p class="pt-2 ms-1 text-white lead fw-bold">Bootstrap</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <img src="../assets/react-svg.png" alt="react-logo" class="img-fluid w-50 bg-dark">
+            <p class="pt-2 ms-1 text-white lead fw-bold">React</p>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <img src="../assets/github6.png" alt="github-logo" class="img-fluid w-50 text-danger bg-danger">
+            <p class="pt-2 ms-1 text-white lead fw-bold">Github</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tools" class="mb-5 py-5">
+      <div class="container text-center">
+        <h1 class="fs-1 text-warning text-center">Tools</h1>
+        <p class="lead pt-3 text-white text-center mb-5 fs-3">What I Use in My Production.</p>
+        <div class="row g-3">
+          <div class="col-6 col-lg-3">
+            <img src="../assets/vscode.png" alt="vscode-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
+            <p class="pt-2 ms-1 text-white lead fw-bold">VS Code</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <img src="../assets/sublime.png" alt="sublime-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
+            <p class="pt-2 ms-1 text-white lead fw-bold">Sublime Text</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <img src="../assets/git.png" alt="git-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
+            <p class="pt-2 ms-1 text-white lead fw-bold">Git</p>
+          </div>
+          <div class="col-6 col-lg-3">
+            <img src="../assets/chrome.jpg" alt="chrome-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
+            <p class="pt-2 ms-1 text-white lead fw-bold">Chrome</p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Bootstrap JavaScript Bundle with Popper -->
