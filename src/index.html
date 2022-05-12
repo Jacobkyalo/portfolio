@@ -7,29 +7,43 @@
     <title>Jacob's Portfolio | Know Me More</title>
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Regular CSS-->
     <link rel="stylesheet" href="../css/style.css">
+    <!--Favicon icon-->
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/png">
+    <style>
+      .card-title:hover{
+        color: #ffc107;
+      }
+      .nav-link:hover{
+        color: #ffc107;
+      }
+    </style>
   </head>
   <body class="bg-dark">
       <!--Navigation-->
       <div class="container-fluid mb-5">
         <div id="navigation">
-           <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+           <nav class="navbar navbar-expand-lg navbar-light bg-dark opacity-75 fixed-top">
               <div class="container">
-                <a href="/" class="navbar-brand fs-2 text-warning">Jacob</a>
+                <a href="/" class="navbar-brand fs-2 fw-bold text-warning">Jacob</a>
+                <!--Start toggle button-->
                 <button class="navbar-toggler border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
+                <!--End toggle button-->
                 <div class="collapse navbar-collapse" id="navbar-links">
+                  <!--Links-->
                   <ul class="navbar-nav ms-auto text-center fs-5">
-                    <li class="nav-item"><a href="/src/index.html" class="nav-link text-white fw-bolder">Home</a></li>
+                    <li class="nav-item"><a href="/src/index.html" class="nav-link text-white">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
                     <li class="nav-item"><a href="#tools" class="nav-link text-white">Tools</a></li>
-                    <li class="nav-item"><a href="/" class="nav-link text-white">Services</a></li>
-                    <li class="nav-item"><a href="/" class="nav-link text-white">Portfolio</a></li>
-                    <li class="nav-item"><a href="/" class="nav-link text-white">Contact</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -49,6 +63,7 @@
                   <h3 class="fs-4 py-2 text-white">A FrontEnd <span class="text-warning"> Developer</span></h3>                
                   <p class="lead text-white">I love to satisfy users by designing the best user interfaces and experience. My goal is to present ideas to useful mark ups by creating appealing UIs.</p>
                   <div class="social-links mt-4">
+                    <!--Social media links-->
                     <ul class="nav align-items-center">
                       <li class="nav-item"><a href="https://github.com/Jacobkyalo" target="_blank" class="nav-link fs-2 text-warning"><i class="bi bi-github"></i></a></li>
                       <li class="nav-item"><a href="https://www.linkedin.com/in/jacob-kyalo-1a8a80211" target="_blank" class="nav-link fs-2 text-warning"><i class="bi bi-linkedin"></i></a></li>
@@ -62,17 +77,17 @@
                   <img src="../assets/about-svg.png" alt="header-image" class="img-fluid w-100 mt-5 align-items-center">
                 </div>
               </div>
-              <div class="col-sm-12">
-                <a href="#about" class="text-warning fs-1"><i class="bi bi-arrow-down-short"></i></a>
-              </div>
+            </div>
+            <div class="text-center">
+              <a href="#about" class="text-warning fs-1"><i class="bi bi-arrow-down-short"></i></a>
             </div>
           </div>
         </div>
      </header>
-
-    <section id="about" class="me-5 py-4">
+     <!--About section-->
+    <section id="about" class=" py-4 top-5">
        <div class="container">
-        <h1 class="fs-1 text-warning text-center mb-5">About</h1>
+        <h1 class="fs-1 text-warning text-center my-5">About</h1>
           <div class="row">
             <div class="col-sm col-md-6 col-lg-6">
               <img src="../assets/header2-svg.png" alt="about-image" class="img-fluid w-100 mb-4">
@@ -90,9 +105,10 @@
           </div>
        </div>
     </section>
+    <!--Skills section-->
     <section id="skills" class="mb-2 py-4">
       <div class="container text-center">
-        <h1 class="fs-1 text-warning text-center">Skills</h1>
+        <h1 class="fs-1 text-warning text-center mt-5">Skills</h1>
         <p class="lead pt-3 text-white text-center mb-5 fs-3">My Skill Set.</p>
         <div class="row g-3">
           <div class="col-6 col-md-4 col-lg-2">
@@ -100,8 +116,8 @@
             <p class="pt-2 ms-1 text-white lead fw-bold">HTML</p>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
-              <img src="../assets/css-svg.png" alt="css-logo" class="img-fluid w-50 bg-dark">
-              <p class="pt-2 ms-1 text-white lead fw-bold">CSS</p>
+            <img src="../assets/css-svg.png" alt="css-logo" class="img-fluid w-50 bg-dark">
+            <p class="pt-2 ms-1 text-white lead fw-bold">CSS</p>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
             <img src="../assets/js-svg.png" alt="js-logo" class="img-fluid w-50 bg-dark">
@@ -122,9 +138,10 @@
         </div>
       </div>
     </section>
-    <section id="tools" class="mb-5 py-5">
+    <!--Tools section-->
+    <section id="tools" class=" py-3">
       <div class="container text-center">
-        <h1 class="fs-1 text-warning text-center">Tools</h1>
+        <h1 class="fs-1 text-warning text-center mt-5">Tools</h1>
         <p class="lead pt-3 text-white text-center mb-5 fs-3">What I Use in My Production.</p>
         <div class="row g-3">
           <div class="col-6 col-lg-3">
@@ -146,7 +163,95 @@
         </div>
       </div>
     </section>
-    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <!--Services section-->
+    <section id="services" class="mb-4">
+      <div class="container py-4">
+        <h1 class="fs-1 text-warning text-center mt-5">Services</h1>
+        <p class="lead pt-3 text-white text-center mb-5 fs-3">What I Do.</p>
+        <div class="row g-4">
+          <div class="col-sm col-md-6">
+            <div class="card text-center border bg-dark text-light">
+              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Frontend Development</h4>
+                <p class="lead card-text">I main work on websites User Interface <span class="text-warning fw-bold">UI</span> to ensure good visual impression of users and clients.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm col-md-6">
+            <div class="card text-center border bg-dark text-light">
+              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Web Design</h4>
+                <p class="lead card-text">I design websites first before converting them to actual code to showcase User Experience <span class="text-warning fw-bold">UX</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm col-md-6">
+            <div class="card text-center border bg-dark text-light">
+              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Collaboration</h4>
+                <p class="lead card-text">I do collaborate with other developers on complex projects and solving problems where possible for example in 
+                  <a href="https://www.github.com" target="_blank" class="text-warning text-decoration-none">Github.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm col-md-6">
+            <div class="card text-center border bg-dark text-light">
+              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Support</h4>
+                <p class="lead card-text">I'm open to helping other developers solve technical problems by offering advice and help where I can.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio section-->
+    <section id="portfolio" class="mb-4">
+      <div class="container py-4">
+        <h1 class="fs-1 text-warning text-center mt-5">Portfolio</h1>
+        <p class="lead pt-3 text-white text-center mb-5 fs-3">Some Of My Recent Work.</p>
+        <div class="text-center text-light">Coming Soon!</div>
+      </div>
+    </section>
+    <!--Contact section-->
+    <section id="contact" class="mb-4">
+      <div class="container py-4">
+        <h1 class="fs-1 text-warning text-center my-5">Get In Touch</h1>
+        <div class="row">
+          <div class="col-sm col-md-6">
+            <!--Contact form-->
+            <form action="#">
+              <input type="text" class="form-control bg-dark mb-4" placeholder="Name">
+              <input type="email" class="form-control bg-dark mb-4" placeholder="Email">
+              <input type="text" class="form-control bg-dark mb-4" placeholder="Subject">
+              <textarea name="message" id="" cols="30" rows="3" class="form-control bg-dark" placeholder="Message..."></textarea>
+              <button type="submit" class="btn btn-warning rounded-pill text-white my-4 px-4 fs-5">Send</button>
+            </form>
+          </div>
+          <div class="col-sm col-md-6">
+            <div class="card border bg-dark ">
+              <div class="card-body">
+                <h5 class="fs-4 text-white mb-4">Contact Info</h5>
+                <p class="lead text-white"><i class="bi bi-geo-alt text-warning fs-4"></i> Nairobi, Kenya</p>
+                <p class="lead text-white"><i class="bi bi-envelope text-warning fs-4"></i> contactjacob@gmail.com</p>
+                <p class="lead text-white"><i class="bi bi-telephone text-warning fs-4"></i> +(254) 701 443 702</p>
+                <p class="lead text-white"><i class="bi bi-whatsapp text-warning fs-4"></i> +(254) 748 010 449</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container mb-4 py-4 text-center text-white">
+        <p class="lead">Copyright &copy; 2022 Jacob | All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Bundle with Popper JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
