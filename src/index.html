@@ -60,7 +60,7 @@
                 <div class="header-info">
                   <h1 class="text-warning fs-1 py-2 mt-5">Hi There!</h1>
                   <h2 class="fs-2 py-2 text-white">I'M Jacob Kyalo</h2>                
-                  <h3 class="fs-4 py-2 text-white">A FrontEnd <span class="text-warning"> Developer</span></h3>                
+                  <h3 class="fs-4 py-2 text-white lh-base">A FrontEnd <span class="text-warning"> Developer</span> and <br> a <span class="text-warning">Web</span> Designer</h3>                
                   <p class="lead text-white">I love to satisfy users by designing the best user interfaces and experience. My goal is to present ideas to useful mark ups by creating appealing UIs.</p>
                   <div class="social-links mt-4">
                     <!--Social media links-->
@@ -224,11 +224,12 @@
         <div class="row">
           <div class="col-sm col-md-6">
             <!--Contact form-->
-            <form action="mailto:https://mail.google.com/mail/u/0/#inbox">
-              <input type="text" class="form-control bg-dark mb-4 text-white" placeholder="Name" required>
-              <input type="email" class="form-control bg-dark mb-4 text-white" placeholder="Email" required>
-              <input type="text" class="form-control bg-dark mb-4 text-white" placeholder="Subject" required>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <input type="text" class="form-control bg-dark mb-4 text-white" name="name" placeholder="Name..." required>
+              <input type="email" class="form-control bg-dark mb-4 text-white" name="email" placeholder="Email..." required>
+              <input type="text" class="form-control bg-dark mb-4 text-white" name="subject" placeholder="Subject..." required>
               <textarea name="message" id="" cols="30" rows="3" class="form-control bg-dark text-white" placeholder="Message..." required></textarea>
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit" class="btn btn-warning rounded-pill text-white my-4 px-4 fs-5">Send</button>
             </form>
           </div>
@@ -236,10 +237,10 @@
             <div class="card border bg-dark ">
               <div class="card-body">
                 <h5 class="fs-4 text-white mb-4">Contact Info</h5>
-                <p class="lead text-white"><i class="bi bi-geo-alt text-warning fs-4"></i> Nairobi, Kenya</p>
-                <p class="lead text-white"><i class="bi bi-envelope text-warning fs-4"></i> contactjacob@gmail.com</p>
-                <p class="lead text-white"><i class="bi bi-telephone text-warning fs-4"></i> +(254) 701 443 702</p>
-                <p class="lead text-white"><i class="bi bi-whatsapp text-warning fs-4"></i> +(254) 748 010 449</p>
+                <p class="lead text-white"><i class="bi bi-geo-alt text-warning fs-4 pe-3"></i>Nairobi, Kenya</p>
+                <p class="lead text-white"><i class="bi bi-envelope text-warning fs-4 pe-3"></i>jacobkyalo43@gmail.com</p>
+                <p class="lead text-white"><i class="bi bi-telephone text-warning fs-4 pe-3"></i>+(254) 701 443 702</p>
+                <p class="lead text-white"><i class="bi bi-whatsapp text-warning fs-4 pe-3"></i>+(254) 748 010 449</p>
               </div>
             </div>
           </div>
