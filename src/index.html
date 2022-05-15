@@ -1,262 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Meta data-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacob's Portfolio | Know Me More</title>
+    <meta name="description" content="Personal Portfolio">
+    <meta name="keywords" content="The portfolio was made with HTML, CSS, BOOTSTRAP and others">
+    <meta name="author" content="Jacob Kyalo">
+    <title>Jacob's Portfolio | Know Me More.</title>
     <!-- Bootstrap CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
     <!--Bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Regular CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <!--Favicon icon-->
-    <link rel="shortcut icon" href="../assets/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/png" />
+    <!--Styles-->
     <style>
-      .card-title:hover{
+      .card-title:hover {
         color: #ffc107;
       }
-      .nav-link:hover{
+      .nav-link:hover {
         color: #ffc107;
       }
      
     </style>
   </head>
   <body class="bg-dark">
-      <!--Navigation-->
-      <div class="container-fluid mb-5">
-        <div id="navigation">
-           <nav class="navbar navbar-expand-lg navbar-light bg-dark opacity-75 fixed-top">
-              <div class="container">
-                <a href="/" class="navbar-brand fs-2 fw-bold text-warning">Jacob</a>
-                <!--Start toggle button-->
-                <button class="navbar-toggler border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--End toggle button-->
-                <div class="collapse navbar-collapse" id="navbar-links">
-                  <!--Links-->
-                  <ul class="navbar-nav ms-auto text-center fs-5">
-                    <li class="nav-item"><a href="/src/index.html" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
-                    <li class="nav-item"><a href="#tools" class="nav-link text-white">Tools</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link text-white">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-           </nav>
-        </div>        
+    <!--Navigation-->
+    <div class="container-fluid mb-5">
+      <div id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark opacity-75 fixed-top ">
+          <div class="container">
+            <a href="/" class="navbar-brand fs-2 fw-bold text-warning animate__animated animate__heartBeat animate__infinite">Jacob</a>
+            <!--Start toggle button-->
+            <button class="navbar-toggler border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--End toggle button-->
+            <div class="collapse navbar-collapse" id="navbar-links">
+              <!--Links-->
+              <ul class="navbar-nav ms-auto text-center fs-5">
+                <li class="nav-item">
+                  <a href="/src/index.html" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link text-white">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#skills" class="nav-link text-white">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#tools" class="nav-link text-white">Tools</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#services" class="nav-link text-white">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link text-white">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link text-white">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-  <main>
+    </div>
+    <main>    
       <!--Hero section-->
-     <header class="hero-header">
+      <header class="hero-header">
         <div class="container-fluid my-3 pt-3">
           <div class="container pt-4">
             <div class="row">
               <div class="col-sm col-md-6 col-lg-6">
                 <div class="header-info">
                   <h1 class="text-warning fs-1 py-2 mt-5">Hi There!</h1>
-                  <h2 class="fs-2 py-2 text-white">I'M Jacob Kyalo</h2>                
-                  <h3 class="fs-4 py-2 text-white lh-base">A Frontend <span class="text-warning"> Developer</span> and <br> a <span class="text-warning">Web</span> Designer</h3>                
-                  <p class="lead text-white">I love to satisfy users by designing the best user interfaces and user experience. My goal is to present ideas to useful mark ups by creating appealing UIs.</p>
-                  <div class="social-links mt-4">
-                    <!--Social media links-->
-                    <ul class="nav align-items-center">
-                      <li class="nav-item"><a href="https://github.com/Jacobkyalo" target="_blank" class="nav-link fs-2 text-warning"><i class="bi bi-github"></i></a></li>
-                      <li class="nav-item"><a href="https://www.linkedin.com/in/jacob-kyalo-1a8a80211" target="_blank" class="nav-link fs-2 text-warning"><i class="bi bi-linkedin"></i></a></li>
-                      <li class="nav-item"><a href="mailto:jacobkyalo43@gmail.com" class="nav-link fs-1"><i class="bi bi-envelope fs-2 text-warning"></i></a></li>
-                    </ul>
-                  </div>
-                </div>                
+                   <h2 class="fs-2 py-2 text-white">I'M Jacob Kyalo</h2>
+                    <h3 class="fs-4 py-2 text-white lh-base">A Frontend <span class="text-warning"> Developer</span> and<br />a
+                      <span class="text-warning">Web</span> Designer
+                    </h3>
+                    <p class="lead text-white">
+                      I love to satisfy users by designing the best user
+                      interfaces and user experience. My goal is to present ideas
+                      to useful mark ups by creating appealing UIs.
+                    </p>
+                    <div class="social-links mt-4">
+                      <!--Social media links-->
+                      <ul class="nav align-items-center">
+                        <li class="nav-item">
+                          <a href="https://github.com/Jacobkyalo" target="_blank" class="nav-link fs-2 text-warning">
+                            <i class="bi bi-github"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="https://www.linkedin.com/in/jacob-kyalo-1a8a80211" target="_blank" class="nav-link fs-2 text-warning">
+                            <i class="bi bi-linkedin"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="https://twitter.com/jacobkyalo202" target="_blank" class="nav-link fs-1">
+                            <i class="bi bi-twitter fs-2 text-warning"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
               </div>
               <div class="col-sm col-md-6 col-lg-6">
                 <div class="header-image">
-                  <img src="../assets/about-svg.png" alt="header-image" class="img-fluid w-100 mt-5 align-items-center">
+                  <img src="../assets/about-svg.png" alt="header-image" class="img-fluid w-100 mt-5 align-items-center"/>
                 </div>
               </div>
             </div>
             <div class="text-center">
-              <a href="#about" class="text-warning fs-1"><i class="bi bi-arrow-down-short"></i></a>
+              <a href="#about" class="text-warning fs-1"
+                ><i class="bi bi-arrow-down-short"></i
+              ></a>
             </div>
           </div>
         </div>
-     </header>
-     <!--About section-->
-    <section id="about" class=" py-4 top-5">
-       <div class="container">
-        <h1 class="fs-1 text-warning text-center my-5">About</h1>
+      </header>
+      <!--About section-->
+      <section id="about" class="py-3">
+        <div class="container">
+          <h1 class="fs-1 text-warning text-center my-5">About</h1>
           <div class="row">
             <div class="col-sm col-md-6 col-lg-6">
-              <img src="../assets/header2-svg.png" alt="about-image" class="img-fluid w-100 mb-4">
+              <img
+                src="../assets/header2-svg.png"
+                alt="about-image"
+                class="img-fluid w-100 mb-4"
+              />
             </div>
-           <div class="col-sm col-md-6 col-lg-6">
+            <div class="col-sm col-md-6 col-lg-6">
               <h1 class="fs-1 text-white">About Me</h1>
-              <p class="mt-3 lead text-light lh-base">I am Jacob from Nairobi, Kenya. I am an undergraduate student pursuing Bachelor of Science
-                in Computer Science. Am interested in Web Development and especially FrontEnd Development and Web Design.
+              <p class="mt-3 lead text-light lh-base">
+                I am Jacob from Nairobi, Kenya. I am an undergraduate student
+                pursuing Bachelor of Science in Computer Science. Am interested
+                in Web Development and especially FrontEnd Development and Web
+                Design.
               </p>
-              <p class="mt-2 lead text-light">Looking forward for more project collaborations <br> and contributions.</p>
+              <p class="mt-2 lead text-light">
+                Looking forward for more project collaborations <br />
+                and contributions.
+              </p>
               <div class="cv-dowload mt-5">
-                  <a href="../assets/resume.pdf" target="_blank" class="btn btn-warning py-2 text-white rounded-pill">Download CV <i class="bi bi-box-arrow-in-down"></i></a>
-              </div>
-            </div>
-          </div>
-       </div>
-    </section>
-    <!--Skills section-->
-    <section id="skills" class="mb-2 py-4">
-      <div class="container text-center">
-        <h1 class="fs-1 text-warning text-center mt-5">Skills</h1>
-        <p class="text-light text-center mb-5">My Skill Set</p>
-        <div class="row g-3">
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="../assets/html-svg.png" alt="html-logo" class="img-fluid w-50 text-dark">
-            <p class="pt-2 ms-1 text-white lead fw-bold">HTML</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="../assets/css-svg.png" alt="css-logo" class="img-fluid w-50 bg-dark">
-            <p class="pt-2 ms-1 text-white lead fw-bold">CSS</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="../assets/js-svg.png" alt="js-logo" class="img-fluid w-50 bg-dark">
-            <p class="pt-2 ms-1 text-white lead fw-bold">JS</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="../assets/bootstrap5.png" alt="bootstrap-logo" class="img-fluid w-50 bg-dark">
-            <p class="pt-2 ms-1 text-white lead fw-bold">Bootstrap</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="../assets/react-svg.png" alt="react-logo" class="img-fluid w-50 bg-dark">
-            <p class="pt-2 ms-1 text-white lead fw-bold">React</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <img src="../assets/github6.png" alt="github-logo" class="img-fluid w-50 text-danger bg-danger">
-            <p class="pt-2 ms-1 text-white lead fw-bold">Github</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Tools section-->
-    <section id="tools" class=" py-3">
-      <div class="container text-center">
-        <h1 class="fs-1 text-warning text-center mt-5">Tools</h1>
-        <p class="text-light text-center mb-5">What I Use in My Production</p>
-        <div class="row g-3">
-          <div class="col-6 col-lg-3">
-            <img src="../assets/vscode.png" alt="vscode-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
-            <p class="pt-2 ms-1 text-white lead fw-bold">VS Code</p>
-          </div>
-          <div class="col-6 col-lg-3">
-            <img src="../assets/sublime.png" alt="sublime-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
-            <p class="pt-2 ms-1 text-white lead fw-bold">Sublime Text</p>
-          </div>
-          <div class="col-6 col-lg-3">
-            <img src="../assets/git.png" alt="git-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
-            <p class="pt-2 ms-1 text-white lead fw-bold">Git</p>
-          </div>
-          <div class="col-6 col-lg-3">
-            <img src="../assets/chrome.jpg" alt="chrome-logo" class="img-fluid w-50 h-50 text-danger bg-danger">
-            <p class="pt-2 ms-1 text-white lead fw-bold">Chrome</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Services section-->
-    <section id="services" class="mb-4">
-      <div class="container py-4">
-        <h1 class="fs-1 text-warning text-center mt-5">Services</h1>
-        <p class="text-light text-center mb-5">What I Offer</p>
-        <div class="row g-4">
-          <div class="col-sm col-md-6">
-            <div class="card text-center border bg-dark text-light">
-              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
-              <div class="card-body">
-                <h4 class="card-title fw-bold">Frontend Development</h4>
-                <p class="lead card-text">I main work on websites User Interface <span class="text-warning fw-bold">UI</span> to ensure good visual impression of users and clients.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6">
-            <div class="card text-center border bg-dark text-light">
-              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
-              <div class="card-body">
-                <h4 class="card-title fw-bold">Web Design</h4>
-                <p class="lead card-text">I design websites first before converting them to actual code to showcase User Experience <span class="text-warning fw-bold">UX</span>.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6">
-            <div class="card text-center border bg-dark text-light">
-              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
-              <div class="card-body">
-                <h4 class="card-title fw-bold">Collaboration</h4>
-                <p class="lead card-text">I do collaborate with other developers on complex projects and solving problems where possible for example in 
-                  <a href="https://www.github.com" target="_blank" class="text-warning text-decoration-none">Github.</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm col-md-6">
-            <div class="card text-center border bg-dark text-light">
-              <h1 class="fw-bold fs-1 text-warning mt-2"><i class="bi bi-code-slash"></i></h1>
-              <div class="card-body">
-                <h4 class="card-title fw-bold">Support</h4>
-                <p class="lead card-text">I'm open to helping other developers solve technical problems by offering advice and help where I can.</p>
+                <a href="../assets/resume.pdf" target="_blank" class="btn btn-warning py-2 text-white rounded-pill">Download CV <i class="bi bi-box-arrow-in-down"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--Portfolio section-->
-    <section id="portfolio" class="mb-4">
-      <div class="container py-4">
-        <h1 class="fs-1 text-warning text-center mt-5">Portfolio</h1>
-        <p class="text-light text-center mb-5">Some Of My Recent Work</p>
-        <div class="text-center text-light">Coming Soon!</div>
-      </div>
-    </section>
-    <!--Contact section-->
-    <section id="contact" class="mb-4">
-      <div class="container py-4">
-        <h1 class="fs-1 text-warning text-center mt-5">Contact Me</h1>
-        <p class="text-center text-light mb-5">Get In Touch</p>
-        <div class="row">
-          <div class="col-sm col-md-6">
-            <!--Contact form-->
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-              <input type="text" class="form-control bg-dark mb-4 text-white" name="name" placeholder="Name..." required>
-              <input type="email" class="form-control bg-dark mb-4 text-white" name="email" placeholder="Email..." required>
-              <input type="text" class="form-control bg-dark mb-4 text-white" name="subject" placeholder="Subject..." required>
-              <textarea name="message" id="" cols="30" rows="3" class="form-control bg-dark text-white" placeholder="Message..." required></textarea>
-              <div data-netlify-recaptcha="true"></div>
-              <button type="submit" class="btn btn-warning rounded-pill text-white my-4 px-4 fs-5">Send</button>
-            </form>
+      </section>
+      <!--Skills section-->
+      <section id="skills" class="mb-2 py-4">
+        <div class="container text-center">
+          <h1 class="fs-1 text-warning text-center mt-5">Skills</h1>
+          <p class="text-light text-center mb-5">My Skill Set</p>
+          <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2">
+                  <img
+                    src="../assets/html-svg.png"
+                    alt="html-logo"
+                    class="img-fluid w-50 text-dark"
+                  />
+                  <p class="pt-2 ms-1 text-white lead fw-bold">HTML</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <img
+                    src="../assets/css-svg.png"
+                    alt="css-logo"
+                    class="img-fluid w-50 bg-dark"
+                  />
+                  <p class="pt-2 ms-1 text-white lead fw-bold">CSS</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <img
+                    src="../assets/js-svg.png"
+                    alt="js-logo"
+                    class="img-fluid w-50 bg-dark"
+                  />
+                  <p class="pt-2 ms-1 text-white lead fw-bold">JS</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                  <img
+                    src="../assets/bootstrap5.png"
+                    alt="bootstrap-logo"
+                    class="img-fluid w-50 bg-dark"
+                  />
+                  <p class="pt-2 ms-1 text-white lead fw-bold">Bootstrap</p>
+                </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="../assets/react-svg.png"
+                alt="react-logo"
+                class="img-fluid w-50 bg-dark"
+              />
+              <p class="pt-2 ms-1 text-white lead fw-bold">React</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="../assets/github6.png"
+                alt="github-logo"
+                class="img-fluid w-50 text-danger bg-danger"
+              />
+              <p class="pt-2 ms-1 text-white lead fw-bold">Github</p>
+            </div>
           </div>
-          <div class="col-sm col-md-6">
-            <div class="card border bg-dark ">
-              <div class="card-body">
-                <h5 class="fs-4 text-white mb-4">Contact Info</h5>
-                <p class="lead text-white"><i class="bi bi-geo-alt text-warning fs-4 pe-3"></i>Nairobi, Kenya</p>
-                <p class="lead text-white"><i class="bi bi-envelope text-warning fs-4 pe-3"></i>jacobkyalo43@gmail.com</p>
-                <p class="lead text-white"><i class="bi bi-telephone text-warning fs-4 pe-3"></i>+(254) 701 443 702</p>
-                <p class="lead text-white"><i class="bi bi-whatsapp text-warning fs-4 pe-3"></i>+(254) 748 010 449</p>
+        </div>
+      </section>
+      <!--Tools section-->
+      <section id="tools" class="pt-3">
+        <div class="container text-center">
+          <h1 class="fs-1 text-warning text-center mt-5">Tools</h1>
+          <p class="text-light text-center mb-5">What I Use in My Production</p>
+          <div class="row g-3">
+            <div class="col-6 col-lg-3">
+              <img
+                src="../assets/vscode.png"
+                alt="vscode-logo"
+                class="img-fluid w-50 h-50 text-danger bg-danger"
+              />
+              <p class="pt-2 ms-1 text-white lead fw-bold">VS Code</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <img
+                src="../assets/sublime.png"
+                alt="sublime-logo"
+                class="img-fluid w-50 h-50 text-danger bg-danger"
+              />
+              <p class="pt-2 ms-1 text-white lead fw-bold">Sublime Text</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <img
+                src="../assets/git.png"
+                alt="git-logo"
+                class="img-fluid w-50 h-50 text-danger bg-danger"
+              />
+              <p class="pt-2 ms-1 text-white lead fw-bold">Git</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <img
+                src="../assets/chrome.jpg"
+                alt="chrome-logo"
+                class="img-fluid w-50 h-50 text-danger bg-danger"
+              />
+              <p class="pt-2 ms-1 text-white lead fw-bold">Chrome</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Services section-->
+      <section id="services" class="mb-3">
+        <div class="container py-4">
+          <h1 class="fs-1 text-warning text-center mt-5">Services</h1>
+          <p class="text-light text-center mb-5">What I Offer</p>
+          <div class="row g-4">
+            <div class="col-sm col-md-6">
+              <div class="card text-center border bg-dark text-light">
+                <h1 class="fw-bold fs-1 text-warning mt-2">
+                  <i class="bi bi-code-slash"></i>
+                </h1>
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Frontend Development</h4>
+                  <p class="lead card-text">
+                    I main work on websites User Interface
+                    <span class="text-warning fw-bold">UI</span> to ensure good
+                    visual impression of users and clients.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6">
+              <div class="card text-center border bg-dark text-light">
+                <h1 class="fw-bold fs-1 text-warning mt-2">
+                  <i class="bi bi-code-slash"></i>
+                </h1>
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Web Design</h4>
+                  <p class="lead card-text">
+                    I design websites first before converting them to actual
+                    code to showcase User Experience
+                    <span class="text-warning fw-bold">UX</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6">
+              <div class="card text-center border bg-dark text-light">
+                <h1 class="fw-bold fs-1 text-warning mt-2">
+                  <i class="bi bi-code-slash"></i>
+                </h1>
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Collaboration</h4>
+                  <p class="lead card-text">
+                    I do collaborate with other developers on complex projects
+                    and solving problems where possible for example in
+                    <a
+                      href="https://www.github.com"
+                      target="_blank"
+                      class="text-warning text-decoration-none"
+                      >Github.</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6">
+              <div class="card text-center border bg-dark text-light">
+                <h1 class="fw-bold fs-1 text-warning mt-2">
+                  <i class="bi bi-code-slash"></i>
+                </h1>
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">Support</h4>
+                  <p class="lead card-text">
+                    I'm open to helping other developers solve technical
+                    problems by offering advice and help where I can.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <!--FOOTER-->
+      </section>
+      <!--Portfolio section-->
+      <section id="portfolio" class="mb-4">
+        <div class="container py-4">
+          <h1 class="fs-1 text-warning text-center mt-5">Portfolio</h1>
+          <p class="text-light text-center mb-5">Some Of My Recent Work</p>
+          <div class="text-center text-light">Coming Soon!</div>
+        </div>
+      </section>
+      <!--Contact section-->
+      <section id="contact" class="mb-4">
+        <div class="container py-4">
+          <h1 class="fs-1 text-warning text-center mt-5">Contact Me</h1>
+          <p class="text-center text-light mb-5">Get In Touch</p>
+          <div class="row">
+            <div class="col-sm col-md-6">
+              <!--Contact form-->
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+              >
+                <input
+                  type="text"
+                  class="form-control bg-dark mb-4 text-white"
+                  name="name"
+                  placeholder="Name..."
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control bg-dark mb-4 text-white"
+                  name="email"
+                  placeholder="Email..."
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control bg-dark mb-4 text-white"
+                  name="subject"
+                  placeholder="Subject..."
+                  required
+                />
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="3"
+                  class="form-control bg-dark text-white"
+                  placeholder="Message..."
+                  required
+                ></textarea>
+                <div data-netlify-recaptcha="true"></div>
+                <button
+                  type="submit"
+                  class="btn btn-warning rounded-pill text-white my-4 px-4 fs-5"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+            <div class="col-sm col-md-6">
+              <div class="card border bg-dark">
+                <div class="card-body">
+                  <h5 class="fs-4 text-white mb-4">Contact Info</h5>
+                  <p class="lead text-white">
+                    <i class="bi bi-geo-alt text-warning fs-4 pe-3"></i>Nairobi,
+                    Kenya
+                  </p>
+                  <p class="lead text-white">
+                    <i class="bi bi-envelope text-warning fs-4 pe-3"></i
+                    >jacobkyalo43@gmail.com
+                  </p>
+                  <p class="lead text-white">
+                    <i class="bi bi-telephone text-warning fs-4 pe-3"></i>+(254)
+                    701 443 702
+                  </p>
+                  <p class="lead text-white">
+                    <i class="bi bi-whatsapp text-warning fs-4 pe-3"></i>+(254)
+                    748 010 449
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
     <footer>
       <div class="container mb-4 py-4 text-center text-white">
         <p class="lead">Copyright &copy; 2022 Jacob | All Rights Reserved.</p>
       </div>
     </footer>
     <!-- Bootstrap JavaScript Bundle with Popper JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
